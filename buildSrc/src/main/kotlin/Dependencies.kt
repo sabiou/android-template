@@ -18,9 +18,10 @@ object Versions {
     const val CONSTRAINT_LAYOUT = "2.0.4"
     const val CORE_KTX = "1.3.2"
     const val COROUTINES = "1.4.2"
+    const val DAGGER = "2.30.1"
     const val ESPRESSO_CORE = "3.3.0"
     const val FRAGMENT = "1.2.5"
-    const val HILT = "2.30.1"
+    const val HILT = "2.30.1-alpha"
     const val HILT_ANDROID = "1.0.0-alpha02"
     const val INSETTER = "0.3.1"
     const val JUNIT = "4.13.1"
@@ -78,7 +79,7 @@ object LibDI {
     const val HILT_VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT_ANDROID}"
     const val HILT_DAGGER = "com.google.dagger:hilt-android:${Versions.HILT}"
     const val HILT_DAGGER_COMPILER = "com.google.dagger:dagger-compiler:${Versions.HILT}"
-    const val DAGGER = "com.google.dagger:dagger:${Versions.HILT}"
+    const val DAGGER = "com.google.dagger:dagger:${Versions.DAGGER}"
 }
 
 @Suppress("unused")
