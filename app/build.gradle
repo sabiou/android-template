@@ -67,7 +67,7 @@ dependencies {
 
     implementation LibArchitecture.ROOM_KTX
     implementation LibArchitecture.ROOM_RUNTIME
-    implementation LibArchitecture.ROOM_RUNTIME_KTX
+    implementation LibArchitecture.WORK_KTX
 
     // image loading
     implementation LibUI.COIL

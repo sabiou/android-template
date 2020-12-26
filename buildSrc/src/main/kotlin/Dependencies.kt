@@ -37,6 +37,7 @@ object Versions {
     const val ROOM = "2.2.6"
     const val RETROFIT_KOTLINX_SERIALIZATION = "0.8.0"
     const val ROBOLECTRIC = "4.4"
+    const val WORK = "2.4.0"
 }
 
 @Suppress("unused")
@@ -59,7 +60,7 @@ object LibArchitecture {
     const val ROOM_COMPILER = "androidx.room:room-compiler:${Versions.ROOM}"
     const val ROOM_RUNTIME = "androidx.room:room-runtime:${Versions.ROOM}"
     const val ROOM_KTX = "androidx.room:room-ktx:${Versions.ROOM}"
-    const val ROOM_RUNTIME_KTX = "androidx.work:work-runtime-ktx:${Versions.ROOM}"
+    const val WORK_KTX = "androidx.work:work-runtime-ktx:${Versions.WORK}"
 }
 
 @Suppress("unused")
@@ -73,7 +74,7 @@ object LibDI {
     // Hilt
     const val HILT_COMPILER = "androidx.hilt:hilt-compiler:${Versions.HILT_ANDROID}"
     const val HILT_DAGGER__ANDROID_COMPILER = "com.google.dagger:hilt-android-compiler:${Versions.HILT}"
-    const val HILT_VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT}"
+    const val HILT_VIEW_MODEL = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.HILT_ANDROID}"
     const val HILT_DAGGER = "com.google.dagger:hilt-android:${Versions.HILT}"
     const val HILT_DAGGER_COMPILER = "com.google.dagger:dagger-compiler:${Versions.HILT}"
     const val DAGGER = "com.google.dagger:dagger:${Versions.HILT}"
