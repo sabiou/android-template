@@ -5,7 +5,6 @@ import android.os.Bundle
 import dagger.hilt.android.AndroidEntryPoint
 import dev.farouk.android.databinding.ActivityMainBinding
 
-@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
