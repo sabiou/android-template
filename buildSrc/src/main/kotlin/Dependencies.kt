@@ -22,6 +22,7 @@ object Versions {
     const val FRAGMENT = "1.2.5"
     const val HILT = "2.28.3-alpha"
     const val HILT_ANDROID = "1.0.0-alpha02"
+    const val INSETTER = "0.3.1"
     const val JUNIT = "4.13"
     const val KOTLINX_SERIALIZATION = "1.0.1"
     const val KLUENT = "1.64"
@@ -117,6 +118,7 @@ object LibUI {
     const val MATERIAL_COMPONENTS = "com.google.android.material:material:${Versions.MATERIAL_COMPONENTS}"
     const val COIL = "io.coil-kt:coil:${Versions.COIL}"
     const val RECYCLERVIEW = "androidx.recyclerview:recyclerview:${Versions.RECYCLERVIEW}"
+    const val INSETTERS = "dev.chrisbanes:insetter-ktx:${Versions.INSETTER}"
 }
 
 @Suppress("unused")
