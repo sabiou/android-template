@@ -10,20 +10,20 @@ object Sdk {
 
 @Suppress("unused")
 object Versions {
-    const val ANDROIDX_TEST_EXT = "1.1.1"
-    const val ANDROIDX_TEST = "1.2.0"
+    const val ANDROIDX_TEST_EXT = "1.1.2"
+    const val ANDROIDX_TEST = "1.3.0"
     const val ANDROID_LIFECYCLE = "2.2.0"
     const val ANDROID_ARCH = "2.1.0"
     const val APPCOMPAT = "1.2.0"
     const val CONSTRAINT_LAYOUT = "2.0.4"
     const val CORE_KTX = "1.3.2"
-    const val COROUTINES = "1.4.1"
-    const val ESPRESSO_CORE = "3.2.0"
+    const val COROUTINES = "1.4.2"
+    const val ESPRESSO_CORE = "3.3.0"
     const val FRAGMENT = "1.2.5"
-    const val HILT = "2.28.3-alpha"
+    const val HILT = "2.30.1"
     const val HILT_ANDROID = "1.0.0-alpha02"
     const val INSETTER = "0.3.1"
-    const val JUNIT = "4.13"
+    const val JUNIT = "4.13.1"
     const val KOTLINX_SERIALIZATION = "1.0.1"
     const val KLUENT = "1.64"
     const val KTLINT = "0.39.0"
@@ -38,6 +38,7 @@ object Versions {
     const val RETROFIT_KOTLINX_SERIALIZATION = "0.8.0"
     const val ROBOLECTRIC = "4.4"
     const val WORK = "2.4.0"
+    const val GRADLE_VERSIONS_UPDATE = "0.36.0"
 }
 
 @Suppress("unused")
@@ -136,4 +137,5 @@ object Plugins {
     const val GRADLE_PLUGIN = "org.jetbrains.kotlin:kotlin-stdlib:${BuildPluginsVersion.KOTLIN}"
     const val NAVIGATION_SAFE_ARGS = "androidx.navigation:navigation-safe-args-gradle-plugin:${Versions.NAVIGATION_COMPONENT}"
     const val HILT_PLUGIN = "com.google.dagger:hilt-android-gradle-plugin:${Versions.HILT}"
+    const val GRADLE_VERSIONS = "com.github.ben-manes:gradle-versions-plugin:${Versions.GRADLE_VERSIONS_UPDATE}"
 }
