@@ -1,0 +1,4 @@
+rootProject.name = "Template"
+include ':app'
+include ':module-kotlin'
+include ':module-android'

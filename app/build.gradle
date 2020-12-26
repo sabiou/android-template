@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion Sdk.COMPILE_SDK_VERSION
+
+    defaultConfig {
+        applicationId AppCoordinates.APP_ID
+        minSdkVersion Sdk.MIN_SDK_VERSION
+        targetSdkVersion Sdk.TARGET_SDK_VERSION
+        versionCode AppCoordinates.APP_VERSION_CODE
+        versionName AppCoordinates.APP_VERSION_NAME
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding = true
+        viewBinding = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    kapt LibDI.HILT_COMPILER
+    kapt LibDI.HILT_DAGGER_COMPILER
+    kapt LibDI.HILT_DAGGER__ANDROID_COMPILER
+    kapt LibArchitecture.ROOM_COMPILER
+    implementation Plugins.GRADLE_PLUGIN
+    implementation LibSupport.ANDROIDX_CORE_KTX
+    implementation LibSupport.ANDROIDX_APPCOMPAT
+    implementation LibUI.MATERIAL_COMPONENTS
+    implementation LibSupport.ANDROIDX_CONSTRAINT_LAYOUT
+    implementation(LibUI.RECYCLERVIEW)
+
+    implementation LibArchitecture.VIEW_MODEL
+    implementation LibArchitecture.LIVE_DATA
+
+
+    implementation LibCoroutines.ANDROID
+    implementation LibCoroutines.CORE
+
+    implementation LibDI.DAGGER
+    implementation LibDI.HILT_DAGGER
+    implementation LibDI.HILT_VIEW_MODEL
+
+
+    implementation LibArchitecture.ROOM_KTX
+    implementation LibArchitecture.ROOM_RUNTIME
+    implementation LibArchitecture.ROOM_RUNTIME_KTX
+
+    // image loading
+    implementation LibUI.COIL
+
+    implementation(LibHttp.OKHTTP)
+    implementation(LibHttp.OKHTTP_LOGGING)
+
+    testImplementation(LibTesting.ANDROID_CORE_TESTING)
+    testImplementation(LibTesting.COROUTINES)
+    testImplementation(LibTesting.JUNIT)
+    testImplementation(LibTesting.LIVE_DATA_TESTING)
+
+    androidTestImplementation(LibAndroidTesting.ANDROIDX_TEST_EXT_JUNIT)
+    androidTestImplementation(LibAndroidTesting.ANDROIDX_TEST_RULES)
+    androidTestImplementation(LibAndroidTesting.ESPRESSO_CORE)
+}
