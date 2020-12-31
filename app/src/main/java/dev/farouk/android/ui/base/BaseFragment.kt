@@ -11,6 +11,7 @@ import androidx.viewbinding.ViewBinding
 /**
  * Created by Farouk on 26/12/2020.
  */
+@Suppress("unused")
 abstract class BaseFragment<VB: ViewBinding, VM: ViewModel> : Fragment() {
 
     private var _binding: VB? = null
